@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,30 +8,31 @@
 
 <title>DJ XpertSound Montpellier | Funky Disco Salsa Reggae Party</title>
 
-<meta name="description" content="DJ XpertSound à Montpellier spécialisé dans les soirées Funky, Disco, Salsa, Reggae et événements festifs. Ambiance garantie pour mariages, anniversaires, soirées privées et événements publics.">
+<meta name="description" content="DJ XpertSound à Montpellier spécialisé dans les soirées Funky, Disco, Salsa, Reggae et événements festifs. DJ mobile original pour anniversaires, mariages, soirées privées et événements publics.">
 
-<meta name="keywords" content="DJ Montpellier, DJ Hérault, DJ soirée Montpellier, Funky Disco Party, DJ Salsa, DJ Reggae, DJ événementiel, DJ mariage Montpellier, animation musicale Montpellier, XpertSound">
+<meta name="keywords" content="DJ Montpellier, DJ Hérault, DJ soirée Montpellier, Funky Disco Party, DJ Salsa, DJ Reggae, DJ événementiel, DJ mariage Montpellier, animation musicale Montpellier, DJ mobile, XpertSound">
 
 <meta name="author" content="DJ XpertSound">
-
 <meta name="robots" content="index, follow">
+<meta name="language" content="fr">
+<meta name="revisit-after" content="7 days">
 
 <link rel="canonical" href="https://xpertsound.github.io/">
 
-<!-- Open Graph Facebook / WhatsApp -->
+<!-- Open Graph -->
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="DJ XpertSound Montpellier">
 <meta property="og:description" content="Découvrez l'univers Funky Disco Salsa Reggae de DJ XpertSound.">
 <meta property="og:url" content="https://xpertsound.github.io/">
-<meta property="og:image" content="https://xpertsound.github.io/images/logo.jpg">
+<meta property="og:image" content="https://xpertsound.github.io/assets/hero.png">
 
 <!-- Twitter -->
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DJ XpertSound Montpellier">
 <meta name="twitter:description" content="Soirées Funky Disco Salsa Reggae à Montpellier.">
-<meta name="twitter:image" content="https://xpertsound.github.io/images/logo.jpg">
+<meta name="twitter:image" content="https://xpertsound.github.io/assets/hero.png">
 
 <!-- GEO -->
 
@@ -41,46 +43,59 @@
 
 <!-- Mobile -->
 
-<meta name="theme-color" content="#ff0000">
+<meta name="theme-color" content="#050505">
 
 <!-- Favicon -->
 
 <link rel="icon" type="image/png" href="favicon.png">
 
-<!-- Google Fonts -->
+<!-- Performance -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preload" as="image" href="assets/funky.png">
+<link rel="preload" as="image" href="assets/hero.png">
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- SEO Local Business -->
 
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "ProfessionalService",
-"name": "DJ XpertSound",
-"image": "https://xpertsound.github.io/images/logo.jpg",
-"url": "https://xpertsound.github.io/",
-"telephone": "+33600000000",
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Montpellier",
-"postalCode": "34000",
-"addressCountry": "FR"
+"@context":"https://schema.org",
+"@type":"ProfessionalService",
+"name":"DJ XpertSound",
+"image":"https://xpertsound.github.io/assets/hero.png",
+"url":"https://xpertsound.github.io/",
+"description":"DJ Funky Disco Salsa Reggae à Montpellier.",
+"areaServed":"Montpellier",
+"priceRange":"€€",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Montpellier",
+"postalCode":"34000",
+"addressCountry":"FR"
 },
-"description": "DJ Funky Disco Salsa Reggae à Montpellier.",
-"areaServed": "Montpellier",
-"priceRange": "€€"
+"sameAs":[
+"https://www.instagram.com/xpertsound/",
+"https://www.facebook.com/XpertSound"
+]
 }
 </script>
 
-</head>
-
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -109,7 +124,9 @@ to{transform:scale(1.1);}
 
 .hero{
 min-height:100vh;
-background:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)), url('assets/funky.png') center/cover no-repeat;
+background:
+linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+url('assets/funky.png') center/cover no-repeat;
 display:flex;
 flex-direction:column;
 }
@@ -137,6 +154,12 @@ gap:20px;
 text-decoration:none;
 color:white;
 font-weight:600;
+transition:.3s;
+}
+
+.socials a:hover,
+.social-links a:hover{
+color:#ffd700;
 }
 
 .hero-content{
@@ -152,6 +175,7 @@ padding:20px;
 .hero-content h1{
 font-size:4.5rem;
 margin-bottom:20px;
+text-shadow:0 0 15px rgba(255,215,0,.2);
 }
 
 .hero-content p{
@@ -166,6 +190,7 @@ padding:25px 40px;
 border-radius:20px;
 background:rgba(255,215,0,.08);
 border:1px solid rgba(255,215,0,.35);
+backdrop-filter:blur(8px);
 }
 
 .price{
@@ -190,6 +215,7 @@ cursor:pointer;
 
 .btn:hover{
 transform:scale(1.05);
+box-shadow:0 0 25px rgba(255,215,0,.4);
 }
 
 section{
@@ -217,14 +243,16 @@ box-shadow:0 0 35px rgba(255,215,0,.15);
 .intro h2,
 .gallery h2,
 .contact h2,
-.cta h2{
+.cta h2,
+.seo-text h2{
 font-size:2.8rem;
 margin-bottom:25px;
 color:#ffd700;
 }
 
 .intro p,
-.intro li{
+.intro li,
+.seo-text p{
 line-height:1.8;
 }
 
@@ -342,6 +370,14 @@ display:flex;
 justify-content:center;
 gap:25px;
 margin-top:30px;
+flex-wrap:wrap;
+}
+
+.seo-text{
+max-width:1000px;
+margin:auto;
+text-align:center;
+opacity:.9;
 }
 
 footer{
@@ -351,14 +387,24 @@ opacity:.7;
 }
 
 @media(max-width:900px){
+
 .hero-content h1{
 font-size:2.8rem;
 }
+
 .intro{
 grid-template-columns:1fr;
 }
+
+nav{
+flex-direction:column;
+gap:20px;
 }
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -368,17 +414,20 @@ grid-template-columns:1fr;
 <header class="hero">
 
 <nav>
+
 <div class="logo">XpertSound.fr</div>
 
 <div class="socials">
-<a href="https://wa.me/babyrasta34">WhatsApp</a>
-<a href="https://www.instagram.com/xpertsound/">Instagram</a>
-<a href="https://www.facebook.com/XpertSound">Facebook</a>
+<a href="https://wa.me/babyrasta34" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/xpertsound/" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/XpertSound" target="_blank">Facebook</a>
 </div>
+
 </nav>
 
 <div class="hero-content">
-<h1>DJ Mobile en Vélo</h1>
+
+<h1>DJ Mobile en Vélo à Montpellier</h1>
 
 <p>
 Une ambiance élégante, festive et originale pour vos soirées privées,
@@ -391,6 +440,7 @@ terrasses, anniversaires et événements.
 </div>
 
 <a href="#contact" class="btn">Réserver votre soirée</a>
+
 </div>
 
 </header>
@@ -398,6 +448,7 @@ terrasses, anniversaires et événements.
 <section class="intro">
 
 <div class="intro-text">
+
 <h2>Une prestation unique</h2>
 
 <p>
@@ -411,10 +462,11 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 <li>✔ Ambiance professionnelle</li>
 <li>✔ Sonorisation compacte et mobile</li>
 </ul>
+
 </div>
 
 <div class="intro-image">
-<img src="assets/hero.png" alt="XpertSound DJ">
+<img src="assets/hero.png" alt="DJ XpertSound Montpellier">
 </div>
 
 </section>
@@ -426,17 +478,17 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 <div class="cards">
 
 <div class="card" data-audio="mp3/reggae.mp3">
-<img src="assets/reggae.png" alt="Reggae Roots Party">
+<img src="assets/reggae.png" alt="Soirée Reggae Montpellier">
 <div class="overlay">Reggae Roots Party</div>
 </div>
 
 <div class="card" data-audio="mp3/salsa.mp3">
-<img src="assets/salsa.png" alt="Salsa Cuba Party">
+<img src="assets/salsa.png" alt="Soirée Salsa Montpellier">
 <div class="overlay">Salsa Cuba Party</div>
 </div>
 
 <div class="card" data-audio="mp3/funky disco.mp3">
-<img src="assets/funky.png" alt="Funky Disco Party">
+<img src="assets/funky.png" alt="Soirée Funky Disco Montpellier">
 <div class="overlay">Funky Disco Party</div>
 </div>
 
@@ -464,8 +516,23 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 </section>
 
 <section class="cta">
+
 <h2>Donnez du style à votre événement</h2>
+
 <a href="#contact" class="btn">Contacter XpertSound</a>
+
+</section>
+
+<section class="seo-text">
+
+<h2>DJ à Montpellier - XpertSound</h2>
+
+<p>
+DJ XpertSound anime vos soirées à Montpellier et dans toute la région.
+Spécialisé dans les ambiances Funky, Disco, Salsa, Reggae et soirées festives.
+Animation musicale pour anniversaires, mariages, événements privés et publics.
+</p>
+
 </section>
 
 <section class="contact" id="contact">
@@ -473,29 +540,35 @@ mobile original. Funky, Salsa, Reggae, Disco et musiques festives adaptées à v
 <h2>Contact</h2>
 
 <form id="contactForm">
+
 <input type="text" name="nom" placeholder="Votre nom" required>
+
 <input type="email" name="email" placeholder="Votre email" required>
+
 <textarea name="message" placeholder="Parlez de votre événement" required></textarea>
+
 <button type="submit">Envoyer</button>
+
 <div id="formMessage" class="form-message"></div>
+
 </form>
 
 <div class="social-links">
-<a href="https://wa.me/babyrasta34">WhatsApp</a>
-<a href="https://www.instagram.com/xpertsound/">Instagram</a>
-<a href="https://www.facebook.com/XpertSound">Facebook</a>
+<a href="https://wa.me/babyrasta34" target="_blank">WhatsApp</a>
+<a href="https://www.instagram.com/xpertsound/" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/XpertSound" target="_blank">Facebook</a>
 </div>
 
 </section>
 
 <footer>
-© XpertSound.fr — DJ Mobile Original
+© XpertSound.fr — DJ Mobile Original Montpellier
 </footer>
 
 <script>
 
-// Feature cards hover effect
 document.querySelectorAll('.feature').forEach(card=>{
+
 card.addEventListener('mouseenter', ()=>{
 card.style.boxShadow='0 0 25px rgba(255,215,0,.25)';
 });
@@ -503,9 +576,9 @@ card.style.boxShadow='0 0 25px rgba(255,215,0,.25)';
 card.addEventListener('mouseleave', ()=>{
 card.style.boxShadow='none';
 });
+
 });
 
-// Lecture musique au survol des images
 const cards = document.querySelectorAll('.card');
 
 let currentAudio = null;
@@ -516,15 +589,15 @@ card.addEventListener('mouseenter', () => {
 
 const audioFile = card.getAttribute('data-audio');
 
-// Stop ancien son
 if(currentAudio){
 currentAudio.pause();
 currentAudio.currentTime = 0;
 }
 
-// Nouveau son
 currentAudio = new Audio(audioFile);
+
 currentAudio.volume = 0.7;
+
 currentAudio.play();
 
 });
@@ -540,14 +613,16 @@ currentAudio.currentTime = 0;
 
 });
 
-// Contact form submission
 document.getElementById('contactForm').addEventListener('submit', function(e) {
+
 e.preventDefault();
 
 const formMessage = document.getElementById('formMessage');
+
 const submitButton = this.querySelector('button');
 
 submitButton.disabled = true;
+
 submitButton.textContent = 'Envoi en cours...';
 
 const formData = new FormData(this);
@@ -556,15 +631,19 @@ fetch('https://formsubmit.co/ajax/babyrasta34@gmail.com', {
 method: 'POST',
 body: formData
 })
+
 .then(response => response.json())
+
 .then(data => {
 
 formMessage.textContent = '✅ Message envoyé avec succès !';
+
 formMessage.style.color = '#00ff00';
 
 document.getElementById('contactForm').reset();
 
 submitButton.disabled = false;
+
 submitButton.textContent = 'Envoyer';
 
 setTimeout(() => {
@@ -572,17 +651,21 @@ formMessage.textContent = '';
 }, 5000);
 
 })
+
 .catch(error => {
 
 console.error('Erreur:', error);
 
 formMessage.textContent = '❌ Erreur lors de l’envoi.';
+
 formMessage.style.color = '#ff0000';
 
 submitButton.disabled = false;
+
 submitButton.textContent = 'Envoyer';
 
 });
+
 });
 
 </script>
